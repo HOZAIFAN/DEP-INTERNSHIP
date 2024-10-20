@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+:root{
+    --bg-color:#1f242d;
+    --second-bg-bolor:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html{
+    font-size: 140%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--second-bg-bolor);
+    color: var(--text-color);
+}
+section{
+    min-height: 100vh;
+    padding: 7rem 9% 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header{
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    height: 40%;
+    padding: 15px;
+}
+.logo{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+    font-family: "Candal", sans-serif;
+    padding-left: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 1.2rem;
+    margin-right: 2.5rem;
+    font-size: 0.8rem;
+    transition: 1s;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: 1000;
+}
+.navbar a:hover ,
+.navbar a.active{
+    color: var(--main-color);  
+    border-bottom: 2px solid var(--main-color);
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: var(--main-color);
+}
+
+.image-wrapper {
+    width: 120%; 
+    height: 70%; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 30%; 
+    box-shadow: 2px 2px 50px var(--main-color);
+}
+.img-class {
+    width: 100%; 
+    height:100%; 
+}
+.home-content{
+    width:150vw;
+    margin-right: 250px;
+}
+.home-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.home-content h1 {
+   font-size: 4rem;
+   font-weight: 700;
+   line-height: 1;
+}
+.home-content p{
+    font-size: 0.8rem;
+
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    background-color: #0ef;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 2rem 1.5rem 2rem 0;
+    transition: transform 0.7s ease-in-out;
+    transform-origin: center; 
+}
+.social-media a:hover{
+    transform: scale(1.5);
+    box-shadow: 2px 2px   50px var(--main-color);
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem var(--main-color);
+    font-size: 1.2rem;
+    padding: 0.3rem 0 0 1.4rem;
+    width: 10rem;
+    height: 2rem;
+    color: var(--second-bg-bolor);
+    font-weight: 600; 
+    transition: 0.5s ease-in-out;
+}
+.btn:hover{
+    box-shadow: none;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    .home-content p{
+        font-size: 0.6rem;
+    
+    }
+    .image-wrapper {
+        width: 160%; 
+        height: 30%; 
+        overflow: hidden; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        border-radius: 30%; 
+        box-shadow: 2px 2px 50px var(--main-color);
+    }
+    .img-class {
+        width: 160%; 
+        height:50%; 
+    }
+    .home-content{
+        width:130vw;
+        margin-right: 220px;
+    }
+    .home-content h3 {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .home-content h1 {
+       font-size: 3rem;
+       font-weight: 700;
+       line-height: 1;
+    }
+   
+}
+   
+  /* Styles for smaller laptops (e.g., older MacBook Air, netbooks) */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .home-content p{
+        font-size: 0.6rem;
+    
+    }
+    .image-wrapper {
+        width: 140%; 
+        height: 60%; 
+        overflow: hidden; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        border-radius: 30%; 
+        box-shadow: 2px 2px 50px var(--main-color);
+        margin-top: -10%;
+    }
+    .img-class {
+        width: 160%; 
+        height:120%; 
+    }
+    .home-content{
+        width:130vw;
+        margin-right: 220px;
+    }
+    .home-content h3 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .home-content h1 {
+       font-size: 2rem;
+       font-weight: 700;
+       line-height: 1;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: var(--text-color);
+        margin-left: 1rem;
+        margin-right: 1.1rem;
+        font-size: 0.6rem;
+        transition: 1s;
+        font-family: "Baloo Bhai 2", sans-serif;
+        font-weight: 1000;
+    }
+    .social-media a{
+        width: 1.5rem;
+        height: 1.5 rem;
+        margin: 1.5rem 0.7rem 1.5rem 0;
+        
+    }
+
+
+}
